@@ -11,7 +11,7 @@
                     <view class="nametext">人名</view>
                     <view class="post">职位职位</view>
                 </view>
-                <view class="contact ">
+                <view class="contact">
                     <view class="phone">12345667789</view>
                     <view class="emil">12345667789</view>
                     <view class="address">12345667789</view>
