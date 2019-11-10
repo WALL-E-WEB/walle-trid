@@ -1,0 +1,5 @@
+<!--pages/data_demo/index.wxml-->
+<text>数据绑定demo</text>
+<view>{{msg}}</view>
+<button bindtap="say" size="defalue" type="primary">按钮</button>
+<view wx:for="{{5}}">{{item}}--{{index}}</view>

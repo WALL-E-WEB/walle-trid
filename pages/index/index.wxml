@@ -1,0 +1,30 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="card">
+        <view class="cardContent">
+            <view class="headimg">
+                <image class="img"  src="../img/timg.jpg" alt=""></image>
+            </view>
+            <view class="cardmsg">
+                <text class="companyname">公司kkkkkkkkkk名</text>
+                <view class="cardname">
+                    <view class="nametext">人名</view>
+                    <view class="post">职位职位</view>
+                </view>
+                <view class="contact ">
+                    <view class="phone">12345667789</view>
+                    <view class="emil">12345667789</view>
+                    <view class="address">12345667789</view>
+                </view>
+            </view>
+          
+     
+            <!--  -->
+        </view>
+          <!-- 按钮 -->
+            <view class="sharesave">
+                <van-button color="#1aac19" plain>分享</van-button>
+                <van-button color="#1aac19">保存</van-button>
+            </view>
+    </view>
+</view>
