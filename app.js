@@ -32,6 +32,14 @@ App({
         }
       }
     })
+
+    // 初始化云数据
+    // function init(options): void;
+    wx.cloud.init({
+      env: 'walletrip',
+      traceUser: true,
+    })
+
   },
   globalData: {
     userInfo: null

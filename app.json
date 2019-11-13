@@ -1,13 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/data_demo/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#dfdfdf",
+    "navigationBarTitleText": "...",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -15,6 +14,28 @@
   "usingComponents": {
     "van-button": "vant-weapp/button/index",
     "van-row": "vant-weapp/row/index",
-    "van-col": "vant-weapp/col/index"
+    "van-col": "vant-weapp/col/index",
+    "van-icon": "vant-weapp/icon/index",
+    "van-tabbar": "vant-weapp/tabbar/index",
+    "van-tabbar-item": "vant-weapp/tabbar-item/index"
+  },
+  "tabBar": {
+    "color": "#dfdfdf",
+    "selectedColor": "#1aac19",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "名片",
+        "iconPath":"pages/img/cardbox2.png",
+        "selectedIconPath":"pages/img/cardbox.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "名片夹",
+        "iconPath": "pages/img/card2.png",
+        "selectedIconPath": "pages/img/card.png"
+      }
+    ]
   }
 }

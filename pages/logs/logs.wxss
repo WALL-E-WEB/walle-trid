@@ -3,6 +3,83 @@
   flex-direction: column;
   padding: 40rpx;
 }
+
 .log-item {
   margin: 10rpx;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.cardclamp {
+  padding: 20rpx;
+  background: linear-gradient(#dfdfdf, #fff);
+}
+
+.carditem {
+  background-color: #fff;
+  border: 1rpx solid #dfdfdf;
+  margin-top: 26rpx;
+  border-radius: 8rpx;
+}
+
+.cardbody {
+  padding: 30rpx 40rpx;
+  color: #bbbbbb;
+}
+
+.cardname {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ 
+}
+
+.name{
+  font-size: 36rpx;
+  padding-right: 10rpx;
+  padding-bottom: 10rpx;
+  color: #000000;
+  font-weight: 600;
+}
+
+.cardfooter{
+  display: flex;
+  border-top: 1rpx solid #dfdfdf;
+  
+  /* justify-content: center; */
+}
+.cardfooter>view {
+  flex: 1;
+  text-align: center;
+  padding: 30rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.callbox>text,.sharetext{
+  padding-left: 6rpx;
+}
+.callbox{
+  position: relative;
+}
+.callbox::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right:1rpx;
+  transform: translate(0,-50%);
+  height: 30rpx;
+  width: 1rpx;
+  background-color: #dfdfdf;
 }

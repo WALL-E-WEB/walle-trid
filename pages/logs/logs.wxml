@@ -1,6 +1,50 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="cardclamp">
+  <view class="head">
+    <view>
+      <image src="../img/timg.jpg"></image>
+    </view>
+    <view>
+      name
+    </view>
+  </view>
+  <view class="clamp">
+    <view>
+      <text>名片夹</text>
+      <text>编辑</text>
+    </view>
+
+    <block wx:for="{{3}}" wx:key="{{index}}">
+      <view class="carditem">
+        <view class="cardbody">
+          <view class="cardname">
+            <view class="nametext">
+              <view>
+                <text class="name">名字</text>
+                <text>置顶</text>
+              </view>
+              <view>职位职位</view>
+            </view>
+            <view class="cardimg">
+              <image src="../img/timg.jpg"></image>
+            </view>
+          </view>
+          <view>
+            <view>123412434</view>
+            <view>12341243@qq.com</view>
+          </view>
+        </view>
+        <view class="cardfooter">
+          <view class="callbox">
+            <van-icon name="phone-o" />
+            <text>拨打电话</text>
+          </view>
+          <view>
+            <van-icon name="share" />
+            <text class="sharetext">分享名片</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+  </view>
 </view>
