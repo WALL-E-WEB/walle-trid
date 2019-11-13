@@ -40,7 +40,7 @@
           </view>
           <view>
             <van-icon name="share" />
-            <text class="sharetext">分享名片</text>
+            <text class="sharetext">分享名d片</text>
           </view>
         </view>
       </view>
