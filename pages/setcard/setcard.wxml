@@ -1,0 +1,96 @@
+<!--pages/setcard/setcard.wxml-->
+<view class="setcard">
+  <view class="setcardimgbox" >
+<image 
+ class="setcardimg" 
+ src="{{cardData.headimg}}"
+ mode="aspectFill"
+ bindtap="upHeadImg"
+ ></image>
+</view>
+<form bindsubmit="cardsetSubmit" >
+ <van-cell-group>
+ <view class="title">基本信息</view>
+
+  <van-cell bind:click="upHeadImg" title="头像" is-link value="编辑头像" />
+
+  <van-field
+    value="{{ username }}"
+    required
+    label="姓名"
+    placeholder="请输入名字"
+    name="name"
+  />
+
+  <van-field
+    value="{{ password }}"
+    label="手机"
+    placeholder="请输入手机号"
+    required
+    border="{{ true }}"
+    name="phone"
+    maxlength="{{11}}"
+    error-message=""
+  />
+
+   <van-field
+    value="{{ password }}"
+    label="邮箱"
+    placeholder="请输入邮箱"
+    border="{{ true }}"
+    name="mail"
+  />
+
+  <!--  -->
+  <view class="title">公司职务</view>
+  <van-field
+    value="{{ username }}"
+    required
+    label="公司"
+    placeholder="请输入公司名称"
+    name="company"
+  />
+
+  <van-field
+    value="{{ password }}"
+    label="职务"
+    placeholder="请输入职务"
+    border="{{ true }}"
+    name="post"
+  />
+
+   <van-field
+    value="{{ cityStr }}"
+    label="所在城市"
+    is-link
+    border="{{ false }}"
+    placeholder="选择城市"
+    disabled
+    name="city"
+    bindtap="showChangeCity"
+
+  />
+   <van-field
+    value="{{ city }}"
+    placeholder="详细地址"
+    input-class="site"
+    class="detailed"
+    name="detailed"
+    
+  />
+ <!--城市  -->
+<button formType="submit">保存</button>
+</van-cell-group>
+
+</form>
+  
+
+
+<van-area 
+wx:if="{{isShow}}" 
+area-list="{{ cityData }}" 
+value="110101" 
+bind:confirm="confirmCity" 
+bind:cancel="unIsShow"
+/>
+</view>

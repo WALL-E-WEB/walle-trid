@@ -188,3 +188,9 @@ overflow: hidden;
   padding: 20rpx;
   margin-right: 20rpx;
 }
+
+.setcard{
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}

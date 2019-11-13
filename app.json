@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/setcard/setcard",
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,7 +18,11 @@
     "van-col": "vant-weapp/col/index",
     "van-icon": "vant-weapp/icon/index",
     "van-tabbar": "vant-weapp/tabbar/index",
-    "van-tabbar-item": "vant-weapp/tabbar-item/index"
+    "van-tabbar-item": "vant-weapp/tabbar-item/index",
+    "van-field": "vant-weapp/field/index",
+    "van-area": "vant-weapp/area/index",
+    "van-cell": "vant-weapp/cell/index",
+    "van-cell-group": "vant-weapp/cell-group/index"
   },
   "tabBar": {
     "color": "#dfdfdf",

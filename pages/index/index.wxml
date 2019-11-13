@@ -57,7 +57,6 @@
   </view>
   </view>
 </view>
-<!-- <van-button bindtap="login" class="login" color="#1aac19">登陆</van-button> -->
-<!-- <button open-type="getUserInfo"/> -->
-
-<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权获取头像昵称 </button> -->
+<view class="setcard">
+  <van-button  class="save " color="#1aac19">创建名片</van-button>
+</view>

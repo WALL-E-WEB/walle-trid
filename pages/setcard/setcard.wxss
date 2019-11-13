@@ -1,0 +1,38 @@
+/* pages/setcard/setcard.wxss */
+.setcard{
+  padding: 20rpx;
+}
+.title{
+  background-color: #ebebeb;
+  margin: 0 -20rpx;
+  padding:30rpx 30rpx 16rpx;
+  color: #c9c9c9;
+}
+input.site{
+  margin-left: 160rpx;
+  /* border-top: 1rpx solid #ccc; */
+  /* text-align: center; */
+}
+.detailed>van-cell{
+  position: relative;
+}
+.detailed>van-cell::after{
+  content: "";
+  position: absolute;
+  top: -80rpx;
+  left: 160rpx;
+  height: 1rpx;
+  width: 500rpx;
+  background-color: #ececec;
+  z-index: 1;
+}
+.setcardimgbox{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+}
+.setcardimg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
